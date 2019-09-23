@@ -1,0 +1,39 @@
+#container_piano-area{
+    height: 300px;
+    display: block;
+    border: 3px solid black;
+}
+.key{
+    height: 300px;
+    width: 50px;
+    float:left;
+    border:1px solid black;
+}
+.active{
+    background-color: gray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.key_sec{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.key_sec_elementLeft{
+    background-color: black;
+    width: 15px;
+    height: 170px;
+}
+.key_sec_elementRight{
+    background-color: black;
+    width: 15px;
+    height: 170px;
+}
+.key_sec_elementRight1{
+    background-color: black;
+    width: 15px;
+    height: 170px;
+    margin-left: 35px;
+}
