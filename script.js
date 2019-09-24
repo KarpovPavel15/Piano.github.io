@@ -35,6 +35,66 @@ document.onkeypress=function (event) {
     });
     document.querySelector('#container_piano-area .key[datatype="'+event.keyCode+'"]').classList.add('active');
     document.querySelector('#container_piano-area .key[keys="'+event.key+'"]').classList.add('active');
+    let key1=event.keyCode;
+    // this.classList.add('active');
+    switch (key1) {
+        case 113:
+            let soundDo = document.getElementById("audio1");
+            soundDo.play();
+            break;
+        case 119:
+            let soundRe = document.getElementById("audio2");
+            soundRe.play();
+            break;
+        case 101:
+            let soundMi = document.getElementById("audio3");
+            soundMi.play();
+            break;
+        case 114:
+            let soundFa = document.getElementById("audio4");
+            soundFa.play();
+            break;
+        case 116:
+            let soundSol = document.getElementById("audio5");
+            soundSol.play();
+            break;
+        case 121:
+            let soundLya = document.getElementById("audio6");
+            soundLya.play();
+            break;
+        case 117:
+            let soundSi = document.getElementById("audio7");
+            soundSi.play();
+            break;
+        case 105:
+            let soundDoSec = document.getElementById("audio8");
+            soundDoSec.play();
+            break;
+        case 111:
+            let soundReSec = document.getElementById("audio2");
+            soundReSec.play();
+            break;
+        case 112:
+            let soundMiSec = document.getElementById("audio3");
+            soundMiSec.play();
+            break;
+        case 97:
+            let soundFaSec = document.getElementById("audio4");
+            soundFaSec.play();
+            break;
+        case 115:
+            let soundSolSec = document.getElementById("audio5");
+            soundSolSec.play();
+            break;
+        case 100:
+            let soundLyaSec = document.getElementById("audio6");
+            soundLyaSec.play();
+            break;
+        case 102:
+            let soundSiSec = document.getElementById("audio7");
+            soundSiSec.play();
+            break;
+    }
 };
 
 document.querySelectorAll('#container_piano-area .key').forEach(function (element) {
@@ -103,13 +163,5 @@ document.querySelectorAll('#container_piano-area .key').forEach(function (elemen
                 soundSiSec.play();
                 break;
         }
-
-
-        // this.classList.add('active');
-        // arr+=keysPress;
-
-        // document.getElementById('inputArea').innerText=arr;
-
-
     }
 });
