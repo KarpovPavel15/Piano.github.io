@@ -1,10 +1,6 @@
-const keyboard=[113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 97, 115, 100, 102];
+const keyboard=[113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 97, 115, 100, 102,90,88,67];
 const keys=['q','w','e','r','t','y','u','i','o','p','a','s','d','f'];
 
-// document.onkeypress=function (event) {
-//     keyboard.push(event.charCode);
-//     console.log(keyboard)
-// };
 function init() {
     let out='';
     for (let i=0;i<keyboard.length;i++){
@@ -36,7 +32,6 @@ document.onkeypress=function (event) {
     document.querySelector('#container_piano-area .key[datatype="'+event.keyCode+'"]').classList.add('active');
     document.querySelector('#container_piano-area .key[keys="'+event.key+'"]').classList.add('active');
     let key1=event.keyCode;
-    // this.classList.add('active');
     switch (key1) {
         case 113:
             let soundDo = document.getElementById("audio1");
@@ -104,7 +99,6 @@ document.querySelectorAll('#container_piano-area .key').forEach(function (elemen
         });
         let key=this.getAttribute('datatype');
         this.classList.add('active');
-        let nota=document.getElementsByClassName('key');
         switch (key) {
             case "113":
                 let soundDo = document.getElementById("audio1");
